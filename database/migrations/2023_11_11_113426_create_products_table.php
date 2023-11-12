@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->integer('jumlah')->default(0);
             $table->timestamps();
         });
     }
